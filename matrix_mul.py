@@ -12,8 +12,11 @@ Prices = [[300, 500],
 Array2 = [200, 100]          
 
 # Benitha Uwituze and Roxannne Niteka: Multiply the input arrays
+
+# Initialize empty list to store results
 Ans = []
 
+# Iterate through each row of Prices matrix and multiply each element with corresponding element in Array2
 for i in range(len(Prices)):
     row_sum = 0
     for j in range(len(Prices[0])):
