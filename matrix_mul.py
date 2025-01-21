@@ -11,11 +11,20 @@ Prices = [[300, 500],
 
 Array2 = [200, 100]          
 
-# Benitha Uwituze and Roxannne: Calculate the result
+# Benitha Uwituze and Roxannne Niteka: Calculate the result
 Ans = []
 
 for i in range(len(Prices)):
     row_sum = 0
     for j in range(len(Prices[0])):
         row_sum += Prices[i][j] * Array2[j]
-    Ans.append(row_sum)
+    Ans.append(row_sum) 
+# Roxanne Niteka: Print with clear formatting to verify results
+print("\nInput arrays:")
+print("Prices:", Prices)
+print("Array2:", Array2)
+print("\nCalculations:")
+print(f"Row 1: ({Prices[0][0]} × {Array2[0]}) + ({Prices[0][1]} × {Array2[1]}) = {Ans[0]}")
+print(f"Row 2: ({Prices[1][0]} × {Array2[0]}) + ({Prices[1][1]} × {Array2[1]}) = {Ans[1]}")
+print("\nFinal result:")
+print(Ans)
